@@ -24,7 +24,7 @@ function bmiCalculator(){
 	}
 	
 	else {			
-		var bmi = (weight/(height*height));	
+		var bmi = weight/(Math.pow(height,2));	
 		bmi = bmi.toFixed(2);
 	}
 	
