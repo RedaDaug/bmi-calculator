@@ -25,24 +25,27 @@ function bmiCalculator(){
 	
 	else {			
 		var bmi = weight/(Math.pow(height,2));	
-		bmi = bmi.toFixed(2);
+		bmi = bmi.toFixed(2);		
 	}
 	
 	if (bmi < 19) {
-		alert("Your BMI is: " + bmi +". Your are underweight.");
+		bmi = "Your BMI is: " + bmi +". Your are underweight.";
 	}	
 	
 	else if (bmi < 25) {
-		alert("Your BMI is: " + bmi +". You have a healthy weight.");
+		bmi = "Your BMI is: " + bmi +". You have a healthy weight.";
 	}	
 	
 	else if (bmi < 30) {
-		alert("Your BMI is: " + bmi +". You are overweight.");
+		bmi = "Your BMI is: " + bmi +". You are overweight.";
 	}	
 	
 	else if (bmi >= 30) {
-		alert("Your BMI is: " + bmi +". You are obese.");
+		bmi = "Your BMI is: " + bmi +". You are obese.";
 	}
+	
+	document.getElementById("results").innerHTML = bmi;
+	
 
 }
 
